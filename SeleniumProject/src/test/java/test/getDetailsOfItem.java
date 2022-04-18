@@ -113,7 +113,7 @@ public class getDetailsOfItem {
 		//switch to the second tab
 	    driver.switchTo().window(newTb.get(1));
 		
-		//Get aboutDetails of the item
+		//Get aboutDetails of the item selected
 		WebElement aboutTheItem = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='feature-bullets']/h1")));
 		js.executeScript("arguments[0].scrollIntoView();", aboutTheItem);
 		assert aboutTheItem.isDisplayed();
